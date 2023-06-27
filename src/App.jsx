@@ -1,25 +1,25 @@
 import '../dist/output.css'
 import Header from './components/Header'
-import Banner from './components/Banner'
-import Solutions from './components/Solutions'
-import Experience from './components/Experience'
-import Team from './components/Team'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+// import Banner from './components/Banner'
+// import Solutions from './components/Solutions'
+// import Experience from './components/Experience'
+// import Team from './components/Team'
+// import Contact from './components/Contact'
+// import Footer from './components/Footer'
 
 function App() {
 
   return (
        <>
             <Header />
-            <main>
+            {/* <main>
                 <Banner />
                 <Solutions />
                 <Experience />
                 <Team />
                 <Contact />
             </main>
-            <Footer />
+            <Footer /> */}
         </>
   )
 }
