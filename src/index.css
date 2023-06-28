@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .gradient-text {
-  @apply bg-gradient-to-r from-primary to-secondary bg-clip-text;
+  @apply bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text;
+}
+
+.gradient-text-hover {
+  @apply bg-gradient-to-r from-primary to-secondary bg-clip-text hover:text-transparent hover:ease-linear duration-300;
 }
