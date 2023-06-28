@@ -1,10 +1,11 @@
 import React from 'react';
+import logo from '../assets/logo-ico.png';
 
 function Header() {
     return (
         <header>
             <nav>
-                <a href="#"><img src="./assets/logo-ico.png" alt="logo" /></a>
+                <a href="#"><img src={logo} alt="logo" /></a>
                 <input type="checkbox" id="menu-toggle" />
                 <label htmlFor="menu-toggle" className="">&#9776;</label>
                 <ul>
