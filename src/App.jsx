@@ -1,4 +1,5 @@
 import '../dist/output.css'
+import Experience from './components/Experience'
 import Header from './components/Header'
 // import Banner from './components/Banner'
 // import Solutions from './components/Solutions'
@@ -12,6 +13,7 @@ function App() {
   return (
        <>
             <Header />
+            <Experience/>
             {/* <main>
                 <Banner />
                 <Solutions />
