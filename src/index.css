@@ -14,3 +14,13 @@
 .gradient-text-hover {
   @apply bg-gradient-to-r from-primary to-secondary bg-clip-text hover:text-transparent hover:ease-linear duration-300;
 }
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

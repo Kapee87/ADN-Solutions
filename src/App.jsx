@@ -16,7 +16,6 @@ function App() {
       <main>
         <Solutions />
         <Experience />
-
       </main>
       {/* 
                 <Banner />
