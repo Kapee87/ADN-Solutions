@@ -4,7 +4,7 @@ import Header from './components/Header'
 // import Banner from './components/Banner'
 import Solutions from './components/Solutions'
 // import Experience from './components/Experience'
-// import Team from './components/Team'
+import Team from './components/Team'
 // import Contact from './components/Contact'
 // import Footer from './components/Footer'
 
@@ -16,12 +16,12 @@ function App() {
       <main>
         <Solutions />
         <Experience />
-
+        <Team />
       </main>
       {/* 
                 <Banner />
                 <Experience />
-                <Team />
+                
                 <Contact />
             <Footer /> */}
     </>
