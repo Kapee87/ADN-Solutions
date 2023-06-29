@@ -1,8 +1,7 @@
-import '../dist/output.css'
-import Experience from './components/Experience'
-import Header from './components/Header'
-// import Banner from './components/Banner'
-import Solutions from './components/Solutions'
+import './index.css'
+// import Header from './components/Header'
+import Banner from './components/Banner'
+// import Solutions from './components/Solutions'
 // import Experience from './components/Experience'
 // import Team from './components/Team'
 // import Contact from './components/Contact'
@@ -12,18 +11,17 @@ function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
-        <Solutions />
-        <Experience />
-
-      </main>
-      {/* 
-                <Banner />
+        <Banner />
+        {/* 
+                <Solutions />
                 <Experience />
                 <Team />
                 <Contact />
-            <Footer /> */}
+              */}
+      </main>
+      {/* <Footer />  */}
     </>
   )
 }
