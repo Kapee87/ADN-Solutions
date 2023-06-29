@@ -128,7 +128,7 @@
             </div>
         </section>
         <section id="contactanos">
-            <form>
+            <form id="contact-form">
                 <h1>Tus clientes ya están en Internet, <span>¿Y vos?</span></h1>
                 <p>No te quedes atrás sin presencia en línea. Creamos sitios web modernos y funcionales que se adaptan a
                     tus necesidades y atraen a tus clientes. </p>
@@ -140,7 +140,7 @@
                     required>
 
                 <label for="servicio">Servicio de interés</label>
-                <select id="servicio">
+                <select id="servicio" name="servicio">
                     <option value="" disabled selected>Seleccione un servicio de interés</option>
                     <option value="Diseño de sitios web">Diseño de sitios web</option>
                     <option value="Desarrollo de aplicaciones web">Desarrollo de aplicaciones web</option>
@@ -151,12 +151,15 @@
                 <textarea id="message" name="message" rows="5"
                     placeholder="Cuéntenos sobre su proyecto o requerimientos" required></textarea>
 
-                <button role="submit">Enviar</button>
+                <button type="submit" value="send" role="submit">Enviar</button>
             </form>
+            <p id="sent-message"></p>
         </section>
     </main>
     <footer>Made with ❤ by <a href="https://www.linkedin.com/in/luca-di-marco/" target="_blank">Tsu</a> for ADN
         Solutions</footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript" src="./contact.js"></script>
 </body>
 
 </html>
