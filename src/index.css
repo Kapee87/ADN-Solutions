@@ -14,6 +14,61 @@
 .gradient-text-hover {
   @apply bg-gradient-to-r from-primary to-secondary bg-clip-text hover:text-transparent hover:ease-linear duration-300;
 }
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Colors */
+:root {
+  --color-dark: rgba(0, 8, 8, 1);
+  --color-light: rgba(253, 252, 247, 1);
+  --color-primary: rgba(80, 237, 240, 1);
+  --color-secondary: rgba(238, 209, 49, 1);
+}
+
+body {
+  background-color: var(--color-dark);
+}
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+
+#inicio .banner h1 {
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.outline-text {
+  font-family: Arial, sans-serif;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--color-light);
+  font-size: 20em;
+}
+
+/* Animacion */
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* SECTION TEAM BACKGROUND VEEEEEEER
   @keyframes moveBackground {
@@ -36,3 +91,12 @@
     filter: hue-rotate(360deg);
   }
 } */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
