@@ -6,10 +6,11 @@ const Banner = () => {
       <section id="inicio" className="
       min-w-full 
       min-h-full 
+      w-screen
+      h-screen
       relative flex 
       justify-center 
-      items-center 
-      mt-96
+      items-center
       ">
         <div className="outline-text adn  
         -z-10 
