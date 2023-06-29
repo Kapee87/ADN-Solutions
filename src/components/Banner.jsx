@@ -11,7 +11,7 @@ const Banner = () => {
       relative flex 
       justify-center 
       items-center
-      -z-10
+      -z-10 
       ">
         <div className="outline-text adn  
         -z-10 
