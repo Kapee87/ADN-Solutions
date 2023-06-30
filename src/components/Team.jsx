@@ -46,7 +46,9 @@ const mockUsers = [
 ] 
 export default function Team(){
     return (
-        <section className={`
+        <section 
+        id="team"
+        className={`
         flex 
         flex-col
         lg:flex-row
@@ -57,6 +59,7 @@ export default function Team(){
         p-12
         text-white
         min-h-screen
+        bg-[length:70px]
         `}>
             <div className={`
             flex-1 
