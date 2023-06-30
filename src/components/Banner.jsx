@@ -13,10 +13,12 @@ const Banner = () => {
       items-center
       -z-10 
       ">
-        <div className="outline-text adn  
+        <div className="outline-text
         -z-10 
         absolute
-        sm:text-10xl 
+        text-9xl
+        sm:text-[15rem]
+        lg:text-[20rem]
         text-transparent
         font-bold
         animate-[fadeIn_2s]
@@ -34,9 +36,10 @@ const Banner = () => {
           bg-clip-text 
           text-transparent 
           font-bold 
-          text-2xl 
+          text-lg 
           sm:text-3xl 
           md:text-4xl
+          lg:text-6xl
           ">
             Tu futuro digital, bien construido.
           </h1>

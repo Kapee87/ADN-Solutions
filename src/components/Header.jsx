@@ -9,7 +9,7 @@ function Header() {
     // TODO: Hamburguer menu
     return (
         <header className="bg-dark">
-            <nav className="flex justify-between w-full fixed top-0 left-0 py-1 px-1 items-center bg-dark">
+            <nav className="flex justify-between min-w-full fixed top-0 left-0 py-1 px-1 items-center bg-dark">
                 <a href="#"><img src={logo} alt="logo" className="h-12" /></a>
                 <ul className="space-x-2 md:space-x-4 md:mr-2 text-light [&>li]:inline md:[&>li>a]:font-bold hidden lg:inline-block ">
                     <li><a href="#inicio" className={navLinkStyleDesktop}>Inicio</a></li>

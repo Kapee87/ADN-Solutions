@@ -2,7 +2,7 @@ import React from 'react';
 let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 function Experience() {
     return (
-        <section className="bg-dark flex flex-col lg:flex-row justify-center items-center px-3 py-5">
+        <section className="bg-dark flex flex-col lg:flex-row justify-center items-center px-3 py-5 min-w-full min-h-screen">
             <h2 className="gradient-text font-bold text-5xl mb-4 lg:mb-0 lg:-rotate-90">Experiencia</h2>
             <div className="flex flex-wrap justify-center gap-4">
                 {arr.map((_,item) => (

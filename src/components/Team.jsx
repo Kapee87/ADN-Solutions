@@ -56,13 +56,15 @@ export default function Team(){
         bg-fixed
         p-12
         text-white
+        min-h-screen
         `}>
             <div className={`
             flex-1 
             p-6
             `}>
                 <h1 className={`
-                text-6xl
+                text-5xl
+                sm:text-6xl
                 mb-1
                 `}>
                     Somos 

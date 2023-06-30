@@ -48,14 +48,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  font-size: 3em;
 }
 
 .outline-text {
   font-family: Arial, sans-serif;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--color-light);
-  font-size: 20em;
 }
 
 /* Animacion */

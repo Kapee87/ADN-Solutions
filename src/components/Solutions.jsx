@@ -3,7 +3,7 @@ export default function Solutions() {
     return (
         <section id="soluciones"
             className={`
-            text-light bg-dark w-full items-center justify-center flex flex-wrap py-4 bg-fixed
+            text-light bg-dark w-full items-center justify-center flex flex-wrap py-4 bg-fixed min-h-screen
             solutions-section-bg text-center
 
             [&>div]:w-11/12 lg:[&>div]:basis-96 [&>div]:border [&>div]:p-10 [&>div]:mx-2 [&>div]:my-1
