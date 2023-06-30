@@ -48,6 +48,8 @@ export default function Team(){
     return (
         <section className={`
         flex 
+        flex-col
+        lg:flex-row
         items-center
         justify-center 
         bg-black 
@@ -84,7 +86,7 @@ export default function Team(){
                     flex 
                     flex-wrap
                     justify-center
-                    w-6/12
+                    lg:w-6/12
                     gap-10
                     `}>
                 {
