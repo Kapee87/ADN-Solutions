@@ -6,7 +6,6 @@ const Banner = () => {
       <section id="inicio" className="
       min-w-full 
       min-h-full 
-      w-screen
       h-screen
       relative flex 
       justify-center 
