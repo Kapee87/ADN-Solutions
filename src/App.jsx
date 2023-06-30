@@ -5,7 +5,7 @@ import Solutions from './components/Solutions'
 import Experience from './components/Experience'
 import Team from './components/Team'
 // import Contact from './components/Contact'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
       {/*                
                 <Contact />
               */}
-      {/* <Footer />  */}
+      <Footer /> 
     </>
   )
 }

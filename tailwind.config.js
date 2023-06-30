@@ -34,5 +34,9 @@ export default {
       },
     },
   },
+  screens: {
+    'md': {'min': '767px'},
+      // => @media (max-width: 767px) { ... }
+  },
   plugins: [],
 };
