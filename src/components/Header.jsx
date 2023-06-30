@@ -3,15 +3,17 @@ import logo from '../assets/logo-ico.png';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false)
-    const burgerLine = `h-2 w-7 my-1 rounded-full bg-light transition ease transform duration-300`;
-    const navLinkStyleDesktop = 'text-light gradient-text-hover'
+    const [page, setPage] = useState('home')
 
+    const burgerLine = `h-2 w-7 my-1 rounded-full bg-light transition ease transform duration-300`;
+    const navLinkStyleDesktop = 'text-light gradient-text-hover font-bold hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] hover:border '
+    
     // TODO: Hamburguer menu
     return (
         <header className="bg-dark">
             <nav className="flex justify-between min-w-full fixed top-0 left-0 py-1 px-1 items-center bg-dark">
                 <a href="#"><img src={logo} alt="logo" className="h-12" /></a>
-                <ul className="space-x-2 md:space-x-4 md:mr-2 text-light [&>li]:inline md:[&>li>a]:font-bold hidden lg:inline-block ">
+                <ul className="space-x-2 md:space-x-4 md:mr-2 text-light [&>li]:inline hidden lg:inline-block ">
                     <li><a href="#inicio" className={navLinkStyleDesktop}>Inicio</a></li>
                     <li><a href="#soluciones" className={navLinkStyleDesktop}>Soluciones</a></li>
                     <li><a href="#experiencia" className={navLinkStyleDesktop}>Experiencia</a></li>
@@ -37,7 +39,24 @@ function Header() {
                             }`}
                     />
                 </button>
-                <div className={isOpen ? 'visible' : 'hidden'}>
+                <div className={`${isOpen ? 'grid' : 'hidden'} absolute bg-dark h-fit w-full top-full lg:hidden font-primary`}>
+                    <ul className="flex flex-col gap-4 rounded-lg items-center transition-all">
+                        <li>
+                            <a href="#" className={`${navLinkStyleDesktop} ${page === 'home' ? 'active' : ''}`}>Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#" className={`${navLinkStyleDesktop} ${page === 'not' ? 'active' : ''}`}>Soluciones</a>
+                        </li>
+                        <li>
+                            <a href="#" className={`${navLinkStyleDesktop} ${page === 'home' ? 'active' : ''}`}>Experiencia</a>
+                        </li>
+                        <li>
+                            <a href="#" className={`${navLinkStyleDesktop} ${page === 'home' ? 'active' : ''}`}>Team</a>
+                        </li>
+                        <li>
+                            <a href="#" className={`${navLinkStyleDesktop} ${page === 'home' ? 'active' : ''}`}>Contactános</a>
+                        </li>
+                    </ul>
 
                 </div>
             </nav>
