@@ -3,10 +3,10 @@ export default function Solutions() {
     return (
         <section id="soluciones"
             className={`
-            text-light bg-dark h-screen w-full items-center justify-center flex flex-wrap 
+            text-light bg-dark w-full items-center justify-center flex flex-wrap py-4 bg-fixed
             solutions-section-bg text-center
 
-            [&>div]:w-40 [&>div]:basis-96 [&>div]:border [&>div]:p-10 [&>div]:mx-2 [&>div]:my-1 
+            [&>div]:w-11/12 lg:[&>div]:basis-96 [&>div]:border [&>div]:p-10 [&>div]:mx-2 [&>div]:my-1
             [&>div]:bg-dark [&>div]:font-default
 
             [&>div>h3]:text-2xl [&>div>h3]:font-primary [&>div>h3]:mb-4 [&>div>h3]:font-bold [&>div]:transition-transform
