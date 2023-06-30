@@ -20,7 +20,7 @@ const mockUsers = [
         github: 'https://github.com/Josenov'
     },
     {
-        ghName: 'JessicaJunco',
+        ghName: 'JesicaJunco',
         github: 'https://github.com/JesicaJunco'
     },
     {
@@ -88,33 +88,32 @@ export default function Team(){
                     de todo el mundo.</p>
             </div>
             <div className={`
-                    flex 
-                    flex-wrap
-                    justify-center
-                    lg:w-6/12
-                    gap-10
+                    m-0
+                    max-h-screen
+                    grid
+                    place-content-center
                     `}>
-                {
-                    mockUsers.map(user => (
-                        <div className={`
-                        max-h-40
-                        h-28
-                        w-28
-                        object-cover
-                        overflow-hidden
-                        rounded-full
-                        `} key={user.github}>
-                            <a href={user.github} target="_blank">
-                                <img src={`https://unavatar.io/github/${user.ghName}`} alt=""/>
-                                <h2 className={`
-                                absolute
-                                text-white
-                                `}
-                                >{user.ghName}</h2>
-                            </a>
-                        </div>
-                    ))
-                } 
+                <div className={`
+                    gallery
+                    grid-cols-4
+                    gap-1
+                    `}>
+                    {mockUsers.map(user => (
+                        <a className={`
+                        a-img
+                        `} href={user.github} target="_blank">
+                            <img className={`
+                            gallery-img
+                            `}
+                            src={`https://unavatar.io/github/${user.ghName}`} alt=""/>
+                            <h2 className={`
+                            `}
+                            >{user.ghName}</h2>
+                        </a>
+
+                        ))
+                    } 
+                </div>
             </div>
         </section>
     )
