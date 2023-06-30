@@ -20,7 +20,7 @@ const mockUsers = [
         github: 'https://github.com/Josenov'
     },
     {
-        ghName: 'JessicaJunco',
+        ghName: 'JesicaJunco',
         github: 'https://github.com/JesicaJunco'
     },
     {
@@ -58,7 +58,8 @@ export default function Team(){
         bg-fixed
         p-12
         text-white
-        max-h-screen
+        min-h-screen
+        bg-[length:70px]
         `}>
             <div className={`
             flex-1 
@@ -95,28 +96,21 @@ export default function Team(){
                 <div className={`
                     gallery
                     grid-cols-4
-                    gap-4
+                    gap-1
                     `}>
-                    {
-                        mockUsers.map(user => (
-                            <div className={`
-                            
-                            `} key={user.github}>
-                                <a href={user.github} target="_blank">
-                                    <img className={`
-                                    gallery-img
-                                    `}
-                                    src={`https://unavatar.io/github/${user.ghName}`} alt=""/>
-                                    <h2 
-                                    className={`
-                                    absolute
-                                    text-white
-                                    opacity-0
-                                    hover:opacity-100
-                                    `}
-                                    >{user.ghName}</h2>
-                                </a>
-                            </div>
+                    {mockUsers.map(user => (
+                        <a className={`
+                        a-img
+                        `} href={user.github} target="_blank">
+                            <img className={`
+                            gallery-img
+                            `}
+                            src={`https://unavatar.io/github/${user.ghName}`} alt=""/>
+                            <h2 className={`
+                            `}
+                            >{user.ghName}</h2>
+                        </a>
+
                         ))
                     } 
                 </div>
