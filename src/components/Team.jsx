@@ -58,8 +58,7 @@ export default function Team(){
         bg-fixed
         p-12
         text-white
-        min-h-screen
-        bg-[length:70px]
+        max-h-screen
         `}>
             <div className={`
             flex-1 

@@ -104,31 +104,7 @@ body {
   z-index: 1;
   --_t: 1.2;
 }
-/* .gallery h2, .gallery h2 {
-  width: 100%;
-  padding: 5%;
-  box-sizing:border-box;
-  font-weight: 300;
-  opacity: 0;
-}
 
-.gallery h2:before, .gallery h2:after {
-  display: inline-block;
-  margin: 0 0.5em;
-  width: 0.25em;
-  height: 0.03em;
-  background: #ffffff;
-  content: '';
-  vertical-align: middle;
-  transition: all 0.3s;
-  text-align:center;
-}
-
-#demo2 {
-top: 50%;
-text-align: center;
-text-transform: uppercase;
-} */
 
 /* .gallery-img:nth-child(1) {--_x: calc(-100% - var(--g))}
 .gallery-img:nth-child(7) {--_x: calc( 100% + var(--g))}
