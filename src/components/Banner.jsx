@@ -11,6 +11,7 @@ const Banner = () => {
       justify-center 
       items-center
       -z-10 
+      snap-start
       ">
         <div className="outline-text
         -z-10 

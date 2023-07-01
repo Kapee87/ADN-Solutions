@@ -12,16 +12,16 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className='snap-y snap-mandatory overflow-y-scroll w-screen h-screen'>
         <Banner />
         <Solutions />
         <Experience />
         <Team />
+        <Footer />
       </main>
       {/*                
                 <Contact />
               */}
-      <Footer /> 
     </>
   )
 }

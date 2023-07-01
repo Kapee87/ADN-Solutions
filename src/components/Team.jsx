@@ -43,12 +43,12 @@ const mockUsers = [
         ghName: 'MarceloZych',
         github: 'https://github.com/MarceloZych'
     },
-] 
-export default function Team(){
+]
+export default function Team() {
     return (
-        <section 
-        id="team"
-        className={`
+        <section
+            id="team"
+            className={`
         flex 
         flex-col
         lg:flex-row
@@ -60,6 +60,7 @@ export default function Team(){
         text-white
         min-h-screen
         bg-[length:70px]
+        snap-start
         `}>
             <div className={`
             flex-1 
@@ -70,14 +71,14 @@ export default function Team(){
                 sm:text-6xl
                 mb-1
                 `}>
-                    Somos 
+                    Somos
                     <span className={`
                     p-2
                     gradient-text
                     `}>
-                    ADN Solutions
+                        ADN Solutions
                     </span>
-                    </h1>
+                </h1>
                 <p className={`
                     text-2xl
                     `}>Somos un equipo de profesionales con sede en Argentina, dedicados a la
@@ -105,14 +106,14 @@ export default function Team(){
                             <img className={`
                             gallery-img
                             `}
-                            src={`https://unavatar.io/github/${user.ghName}`} alt=""/>
+                                src={`https://unavatar.io/github/${user.ghName}`} alt="" />
                             <h2 className={`
                             `}
                             >{user.ghName}</h2>
                         </a>
 
-                        ))
-                    } 
+                    ))
+                    }
                 </div>
             </div>
         </section>
