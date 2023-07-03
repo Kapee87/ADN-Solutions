@@ -99,10 +99,10 @@ export default function Team() {
                     grid-cols-4
                     gap-1
                     `}>
-                    {mockUsers.map(user => (
+                    {mockUsers.map((user,key) => (
                         <a className={`
                         a-img
-                        `} href={user.github} target="_blank">
+                        `} key={key} href={user.github} target="_blank">
                             <img className={`
                             gallery-img
                             `}
