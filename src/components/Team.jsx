@@ -49,18 +49,17 @@ export default function Team() {
         <section
             id="team"
             className={`
-        flex 
-        flex-col
-        lg:flex-row
-        items-center
-        justify-center 
-        bg-black 
-        bg-fixed
-        p-12
-        text-white
-        min-h-screen
-        bg-[length:70px]
-        snap-start
+            flex 
+            flex-col
+            lg:flex-row
+            items-center
+            justify-center 
+            bg-black 
+            bg-fixed
+            p-12
+            text-white
+            min-h-screen
+            snap-start
         `}>
             <div className={`
             flex-1 
@@ -102,14 +101,34 @@ export default function Team() {
                     {mockUsers.map((user,key) => (
                         <a className={`
                         a-img
+                        relative 
+                        hover:scale-105 
+                        transition-transform 
+                        duration-300
                         `} key={key} href={user.github} target="_blank">
                             <img className={`
                             gallery-img
                             `}
                                 src={`https://unavatar.io/github/${user.ghName}`} alt="" />
-                            <h2 className={`
-                            `}
-                            >{user.ghName}</h2>
+                            <div className={`
+                            absolute
+                            inset-0
+                            w-full 
+                            h-full 
+                            flex 
+                            justify-center 
+                            items-center 
+                            bg-black/[0.9] 
+                            opacity-0 
+                            hover:opacity-90  
+                            `}>
+                                <h2 className={`
+                                text-light 
+                                font-primary 
+                                font-bold
+                                `}
+                                >{user.ghName}</h2>
+                            </div>
                         </a>
 
                     ))
