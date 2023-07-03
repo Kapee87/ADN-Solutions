@@ -1,6 +1,6 @@
 function Contact() {
     return(
-        <section id="contactanos" className="flex justify-center min-h-screen pt-32">
+        <section id="contactanos" className="flex justify-center min-h-screen pt-32 snap-start">
             <form className="
             bg-dark text-light 
             w-3/4
