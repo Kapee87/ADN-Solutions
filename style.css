@@ -10,9 +10,16 @@
 /* Colors */
 :root {
   --color-dark: rgba(0, 8, 8, 1);
-  --color-light: rgba(253, 252, 247, 1);
-  --color-primary: rgba(80, 237, 240, 1);
-  --color-secondary: rgba(238, 209, 49, 1);
+  --color-light: rgb(252, 244, 207);
+  --color-primary: rgba(0, 255, 234, 1);
+  --color-secondary: rgba(255, 200, 0, 1);
+}
+
+:root body.light {
+  --color-dark: rgb(250, 238, 200);
+  --color-light: rgba(0, 8, 8, 1);
+  --color-primary: rgb(0, 255, 234);
+  --color-secondary: rgb(255, 200, 0);
 }
 
 /* Scrollbar */
@@ -78,6 +85,14 @@ a {
 a:hover {
   color: var(--color-primary);
   text-decoration: none;
+}
+
+body.light #inicio h1, body.light #experiencia h1 {
+  -webkit-text-stroke: 1px var(--color-light);
+}
+
+body.light #soluciones h3 {
+  -webkit-text-stroke: 0,5px var(--color-light);
 }
 
 h1,
@@ -171,6 +186,66 @@ nav.sticky {
   display: none;
 }
 
+/* Dark/Light Switch */
+.switch {
+  background: linear-gradient(90deg, rgb(15, 23, 49), #343d5b);
+  border: solid 1px #6c757d;
+  border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: none;
+  height: 1.5em;
+  width: 3em;
+  padding: 0.4em;
+}
+
+.sun-icon {
+  fill: yellow;
+  height: 0.8em;
+}
+
+.moon-icon {
+  fill: white;
+  height: 0.8em;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 1.3em;
+  height: 1.3em;
+  position: absolute;
+  background: var(--color-dark);
+  top: -0.03em;
+  left: 0;
+  right: unset;
+  border: solid 1px #f1f1f1;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background: linear-gradient(90deg, rgb(25, 185, 213), #b2e1f7);
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+  border: solid 1px var(--color-dark);
+}
+
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -219,6 +294,15 @@ nav.sticky {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.adn {
+  filter: blur( 1.8px );
+  -webkit-filter: blur( 1.8px );
+}
+
+#inicio .banner {
+  background: transparent;
 }
 
 #inicio .banner h1 {

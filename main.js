@@ -35,3 +35,15 @@ function handleScroll(event) {
 
 document.addEventListener("wheel", handleScroll, { passive: false });
 document.addEventListener("DOMMouseScroll", handleScroll, { passive: false });
+
+
+
+/*--------------------------------------------------------------
+# Funcionalidad Light/Dark Mode
+--------------------------------------------------------------*/
+const btnSwitch = document.querySelector("#switch");
+
+btnSwitch.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+    btnSwitch.classList.toggle("active");
+});
