@@ -12,7 +12,7 @@ function Header() {
     return (
         <header className="bg-dark" onClick={() => { isOpen ? setIsOpen(false) : '' }}>
             <nav className="flex justify-between min-w-full fixed top-0 left-0 py-1 px-1 items-center bg-dark">
-                <a href="#"><img src={logo} alt="logo" className="h-12" /></a>
+                <a href="#"><img src={logo} alt="logo" className="h-12 hover:scale-110 hover:rotate-180 transform origin-center transition-all duration-300" /></a>
                 <ul className="space-x-2 md:space-x-4 md:mr-2 text-light [&>li]:inline hidden lg:inline-block ">
                     <li><a href="#inicio" className={navLinkStyleDesktop}>Inicio</a></li>
                     <li><a href="#soluciones" className={navLinkStyleDesktop}>Soluciones</a></li>
