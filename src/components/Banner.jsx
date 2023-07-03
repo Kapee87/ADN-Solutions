@@ -40,6 +40,7 @@ const Banner = () => {
           sm:text-3xl 
           md:text-4xl
           lg:text-6xl
+          h-24
           ">
             Tu futuro digital, bien construido.
           </h1>
