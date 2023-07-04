@@ -54,7 +54,8 @@ const proyectsMock = [
         img: kapeeStatic,
         gif: kapeeWeb,
         project: "Proyecto de Kapee"
-    }
+    },
+    
 ]
 
 export default proyectsMock;
