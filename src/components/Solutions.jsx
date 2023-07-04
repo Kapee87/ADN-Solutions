@@ -12,6 +12,7 @@ export default function Solutions() {
             [&>div>h3]:text-2xl [&>div>h3]:font-primary [&>div>h3]:mb-4 [&>div>h3]:font-bold [&>div]:transition-transform
 
             [&>div>p]:font-bold
+            snap-start
             `}>
 
             <div className="solucion hover:scale-110">

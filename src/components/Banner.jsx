@@ -6,12 +6,12 @@ const Banner = () => {
       <section id="inicio" className="
       min-w-full 
       min-h-full 
-      w-screen
       h-screen
       relative flex 
       justify-center 
       items-center
       -z-10 
+      snap-start
       ">
         <div className="outline-text
         -z-10 
@@ -40,6 +40,7 @@ const Banner = () => {
           sm:text-3xl 
           md:text-4xl
           lg:text-6xl
+          h-24
           ">
             Tu futuro digital, bien construido.
           </h1>

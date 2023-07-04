@@ -130,8 +130,9 @@ export default function Team() {
                                 >{user.ghName}</h2>
                             </div>
                         </a>
-                    ))
-                    }
+
+                        ))
+                    } 
                 </div>
             </div>
         </section>
