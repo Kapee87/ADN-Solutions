@@ -121,7 +121,7 @@ export default function Team() {
                                 w-full 
                                 h-full 
                                 flex 
-                                justify-center 
+                                justgitify-center 
                                 items-center 
                                 bg-black/[0.9] 
                                 opacity-0 
