@@ -22,7 +22,7 @@ function Contact() {
         }, 30000)
     };
     return (
-        <section id="contactanos" className="flex justify-center min-h-screen pt-32 snap-start">
+        <section id="contactanos" className="flex justify-center items-center min-h-screen pt-32 pb-4 snap-start">
             <form className="
             bg-dark text-light 
             w-3/4
@@ -38,8 +38,8 @@ function Contact() {
                 onSubmit={sendEmail}
                 ref={form}
             >
-                <h1 className="text-3xl font-bold text-center">Tus clientes ya están en Internet, <span className="gradient-text">¿Y vos?</span></h1>
-                <p className="text-center">No te quedes atrás sin presencia en línea. Creamos sitios web modernos y funcionales que se adaptan a
+                <h1 className="text-3xl font-bold text-center xl:text-5xl">Tus clientes ya están en Internet, <span className="gradient-text">¿Y vos?</span></h1>
+                <p className="text-center md-4 md:mb-9 xl:text-2xl">No te quedes atrás sin presencia en línea. Creamos sitios web modernos y funcionales que se adaptan a
                     tus necesidades y atraen a tus clientes. </p>
                 <label for="name">Nombre</label>
                 <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required />
