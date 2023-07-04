@@ -4,11 +4,9 @@ import { useRef, useState } from 'react';
 function Contact() {
     const form = useRef();
     const [isFormSended, setIsFormSended] = useState('')
-
-    console.log(form.current);
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log(form);
+
         emailjs.sendForm('contact_service', 'contact-form', form.current, 'ly3HRv4UR8fqjzOmK')
             .then((result) => {
                 console.log(result.text + 'success');
