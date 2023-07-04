@@ -43,23 +43,23 @@ const mockUsers = [
         ghName: 'MarceloZych',
         github: 'https://github.com/MarceloZych'
     },
-] 
-export default function Team(){
+]
+export default function Team() {
     return (
-        <section 
-        id="team"
-        className={`
-        flex 
-        flex-col
-        lg:flex-row
-        items-center
-        justify-center 
-        bg-black 
-        bg-fixed
-        p-12
-        text-white
-        min-h-screen
-        bg-[length:70px]
+        <section
+            id="team"
+            className={`
+            flex 
+            flex-col
+            lg:flex-row
+            items-center
+            justify-center 
+            bg-black 
+            bg-fixed
+            p-12
+            text-white
+            min-h-screen
+            snap-start
         `}>
             <div className={`
             flex-1 
@@ -70,14 +70,14 @@ export default function Team(){
                 sm:text-6xl
                 mb-1
                 `}>
-                    Somos 
+                    Somos
                     <span className={`
                     p-2
                     gradient-text
                     `}>
-                    ADN Solutions
+                        ADN Solutions
                     </span>
-                    </h1>
+                </h1>
                 <p className={`
                     text-2xl
                     `}>Somos un equipo de profesionales con sede en Argentina, dedicados a la
@@ -98,21 +98,40 @@ export default function Team(){
                     grid-cols-4
                     gap-1
                     `}>
-                    {mockUsers.map(user => (
+                    {mockUsers.map((user,key) => (
                         <a className={`
                         a-img
-                        `} href={user.github} target="_blank">
+                        relative 
+                        hover:scale-105 
+                        transition-transform 
+                        duration-300
+                        `} key={key} href={user.github} target="_blank">
                             <img className={`
                             gallery-img
                             `}
-                            src={`https://unavatar.io/github/${user.ghName}`} alt=""/>
-                            <h2 className={`
-                            `}
-                            >{user.ghName}</h2>
+                            src={`https://unavatar.io/github/${user.ghName}`} alt="" />
+                            <div className={`
+                            absolute
+                            inset-0
+                            w-full 
+                            h-full 
+                            flex 
+                            justify-center 
+                            items-center 
+                            bg-black/[0.9] 
+                            opacity-0 
+                            hover:opacity-90  
+                            `}>
+                                <h2 className={`
+                                text-light 
+                                font-primary 
+                                font-bold
+                                `}
+                                >{user.ghName}</h2>
+                            </div>
                         </a>
-
-                        ))
-                    } 
+                    ))
+                    }
                 </div>
             </div>
         </section>
