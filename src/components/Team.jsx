@@ -43,6 +43,7 @@ const mockUsers = [
         ghName: 'MarceloZych',
         github: 'https://github.com/MarceloZych'
     },
+    
 ]
 export default function Team() {
     return (
@@ -89,50 +90,53 @@ export default function Team() {
             </div>
             <div className={`
                     m-0
-                    max-h-screen
-                    grid
+                    md:w-1/2
+                    min-h-screen
                     place-content-center
+                    flex
+                    justify-center
+                    items-center
                     `}>
                 <div className={`
                     gallery
-                    grid-cols-4
-                    gap-1
+                    gap-4
                     `}>
                     {mockUsers.map((user,key) => (
-                        <a className={`
-                        a-img
-                        relative 
-                        hover:scale-105 
-                        transition-transform 
-                        duration-300
-                        `} key={key} href={user.github} target="_blank">
-                            <img className={`
-                            gallery-img
-                            `}
-                            src={`https://unavatar.io/github/${user.ghName}`} alt="" />
-                            <div className={`
-                            absolute
-                            inset-0
-                            w-full 
-                            h-full 
-                            flex 
-                            justify-center 
-                            items-center 
-                            bg-black/[0.9] 
-                            opacity-0 
-                            hover:opacity-90  
-                            `}>
-                                <h2 className={`
-                                text-light 
-                                font-primary 
-                                font-bold
+                        <div>
+                            <a className={`
+                            a-img
+                            relative 
+                            hover:scale-105 
+                            transition-transform 
+                            duration-300
+                            `} key={key} href={user.github} target="_blank">
+                                <img className={`
+                                gallery-img
                                 `}
-                                >{user.ghName}</h2>
-                            </div>
-                        </a>
-
-                        ))
-                    } 
+                                src={`https://unavatar.io/github/${user.ghName}`} alt="" />
+                                <div className={`
+                                rounded-full
+                                absolute
+                                inset-0
+                                w-full 
+                                h-full 
+                                flex 
+                                justify-center 
+                                items-center 
+                                bg-black/[0.9] 
+                                opacity-0 
+                                hover:opacity-90  
+                                `}>
+                                    <h2 className={`
+                                    text-light 
+                                    font-primary 
+                                    font-bold
+                                    `}
+                                    >{user.ghName}</h2>
+                                </div>
+                            </a>
+                        </div>
+                    ))} 
                 </div>
             </div>
         </section>
