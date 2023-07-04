@@ -14,7 +14,8 @@ export default function Footer() {
     md:h-24 
     md:py-1 
     md:text-light
-    snap-start">
+    snap-start
+    ">
       <div className="
         flex flex-col items-center my-1 
         md:grid 
@@ -48,7 +49,7 @@ export default function Footer() {
           <FontAwesomeIcon icon={faUsers} className="text-3xl hover:text-secondary" />
         </a>
       </div>
-      <div className="my-2 my-1 
+      <div className="my-2
         md:flex 
         md:items-center 
         md:justify-center 
