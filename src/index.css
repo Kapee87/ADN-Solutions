@@ -138,7 +138,7 @@ body {
 }
 
 
-/* .gallery-img:nth-child(1) {--_x: calc(-100% - var(--g))}
+/*.gallery-img:nth-child(1) {--_x: calc(-100% - var(--g))}
 .gallery-img:nth-child(7) {--_x: calc( 100% + var(--g))}
 .gallery-img:nth-child(3),
 .gallery-img:nth-child(5) {--_y: calc(-75% - .87*var(--g))}
