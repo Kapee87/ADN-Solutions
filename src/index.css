@@ -110,8 +110,8 @@ body {
   overflow: hidden;
 }
 .a-img:hover h2, .a-img:focus h2{
-opacity:1;
-transition: 0.8s;
+  opacity:1;
+  transition: 0.8s;
 }
 .a-img h2{
   width: 100%;

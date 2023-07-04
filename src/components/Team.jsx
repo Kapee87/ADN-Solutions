@@ -109,7 +109,7 @@ export default function Team() {
                             <img className={`
                             gallery-img
                             `}
-                                src={`https://unavatar.io/github/${user.ghName}`} alt="" />
+                            src={`https://unavatar.io/github/${user.ghName}`} alt="" />
                             <div className={`
                             absolute
                             inset-0
