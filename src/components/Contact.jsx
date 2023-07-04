@@ -13,13 +13,13 @@ function Contact() {
             .then((result) => {
                 console.log(result.text + 'success');
                 setIsFormSended('Mensaje Enviado Correctamente!')
-
             }, (error) => {
                 console.log(error.text + 'falló');
                 setIsFormSended('Hubo un problema en el envío del mensaje')
             });
         const timeoutResponse = setTimeout(() => {
             setIsFormSended('')
+            e.target.reset()
             clearTimeout(timeoutResponse)
         }, 30000)
     };
