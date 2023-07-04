@@ -1,6 +1,28 @@
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
+
 function Contact() {
-    return(
-        <section id="contactanos" className="flex justify-center min-h-screen pt-32 snap-start">
+    const form = useRef();
+    const [isFormSended, setIsFormSended] = useState('')
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('contact_service', 'contact-form', form.current, 'ly3HRv4UR8fqjzOmK')
+            .then((result) => {
+                console.log(result.text + 'success');
+                setIsFormSended('Mensaje Enviado Correctamente!')
+            }, (error) => {
+                console.log(error.text + 'falló');
+                setIsFormSended('Hubo un problema en el envío del mensaje')
+            });
+        const timeoutResponse = setTimeout(() => {
+            setIsFormSended('')
+            e.target.reset()
+            clearTimeout(timeoutResponse)
+        }, 30000)
+    };
+    return (
+        <section id="contactanos" className="flex justify-center items-center min-h-screen pt-32 pb-4 snap-start">
             <form className="
             bg-dark text-light 
             w-3/4
@@ -11,9 +33,13 @@ function Contact() {
             [&>select]:p-2 [&>select]:bg-dark [&>select]:border
             [&>button]:p-2 [&>button]:bg-dark [&>button]:border
             border-light
-            flex flex-col">
-                <h1 className="text-3xl font-bold text-center">Tus clientes ya están en Internet, <span className="gradient-text">¿Y vos?</span></h1>
-                <p className="text-center">No te quedes atrás sin presencia en línea. Creamos sitios web modernos y funcionales que se adaptan a
+            flex flex-col"
+                id="contact-form"
+                onSubmit={sendEmail}
+                ref={form}
+            >
+                <h1 className="text-3xl font-bold text-center xl:text-5xl">Tus clientes ya están en Internet, <span className="gradient-text">¿Y vos?</span></h1>
+                <p className="text-center md-4 md:mb-9 xl:text-2xl">No te quedes atrás sin presencia en línea. Creamos sitios web modernos y funcionales que se adaptan a
                     tus necesidades y atraen a tus clientes. </p>
                 <label for="name">Nombre</label>
                 <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required />
@@ -23,7 +49,7 @@ function Contact() {
                     required />
 
                 <label for="servicio">Servicio de interés</label>
-                <select id="servicio" className="w-1/2">
+                <select id="servicio" className="w-1/2" name='servicio'>
                     <option value="" disabled selected>Seleccione un servicio de interés</option>
                     <option value="Diseño de sitios web">Diseño de sitios web</option>
                     <option value="Desarrollo de aplicaciones web">Desarrollo de aplicaciones web</option>
@@ -35,6 +61,7 @@ function Contact() {
                     placeholder="Cuéntenos sobre su proyecto o requerimientos" required></textarea>
 
                 <button role="submit" className="inline-block cursor-pointer w-28">Enviar</button>
+                <p className={`${isFormSended === 'Mensaje Enviado Correctamente!' ? 'text-lime-500' : 'text-orange-500'}`}>{isFormSended ?? isFormSended}</p>
             </form>
         </section>
     )
