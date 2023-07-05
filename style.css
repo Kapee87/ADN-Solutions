@@ -77,6 +77,10 @@ body {
   background-color: var(--color-dark);
 }
 
+body.light {
+  background: linear-gradient(90deg, rgb(255, 211, 53), rgb(72, 255, 240));
+}
+
 a {
   color: var(--color-secondary);
   text-decoration: none;
@@ -87,7 +91,7 @@ a:hover {
   text-decoration: none;
 }
 
-body.light #inicio h1, body.light #experiencia h1 {
+body.light h1 {
   -webkit-text-stroke: 1px var(--color-light);
 }
 
@@ -646,7 +650,7 @@ form {
 label {
   font-weight: bold;
   display: block;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 select {
@@ -664,11 +668,16 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--color-light);
+  border-radius: 0.5em;
   margin-bottom: 10px;
   font-size: 16px;
   background-color: var(--color-dark);
   color: var(--color-light);
   font-family: var(--font-secondary);
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
 }
 
 textarea {
@@ -677,18 +686,23 @@ textarea {
 
 button {
   display: inline-block;
-  padding: 0.7em 1.2em;
+  padding: 0.5em 1em;
   border: 1px solid var(--color-light);
+  border-radius: 0.5em;
   font-weight: 500;
   font-size: 1em;
   background-color: var(--color-dark);
   color: var(--color-light);
   transition: all 0.2s;
   cursor: pointer;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
 }
 
 button:hover {
-  color: black;
+  color: var(--color-dark);
   background-color: var(--color-light);
 }
 
