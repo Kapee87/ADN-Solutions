@@ -78,7 +78,7 @@ body {
 }
 
 body.light {
-  background: linear-gradient(90deg, rgb(255, 211, 53), rgb(72, 255, 240));
+  background: linear-gradient(180deg, rgb(255, 211, 53), rgb(72, 255, 240));
 }
 
 a {
@@ -136,6 +136,21 @@ nav ul {
   list-style-type: none;
 }
 
+body.light nav ul {
+  list-style-type: none;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 2rem;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 1rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
 nav ul li {
   display: inline;
   margin: 0 0.4em;
@@ -165,7 +180,7 @@ nav ul li a::after {
   display: block;
   width: 0;
   height: 0.15em;
-  background-color: var(--color-light);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
   position: absolute;
   bottom: -3px;
   left: 0;
