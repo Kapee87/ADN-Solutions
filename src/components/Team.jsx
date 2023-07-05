@@ -65,6 +65,7 @@ export default function Team() {
             <div className={`
             flex-1 
             p-6
+
             `}>
                 <h1 className={`
                 text-5xl
@@ -91,44 +92,34 @@ export default function Team() {
             <div className={`
                     m-0
                     md:w-1/2
-                    min-h-screen
-                    place-content-center
-                    flex
-                    justify-center
-                    items-center
                     `}>
                 <div className={`
                     gallery
-                    gap-4
                     `}>
                     {mockUsers.map((user,key) => (
-                        <div>
+                        <div className="gallery-item" key={key}>
                             <a className={`
-                            a-img
-                            relative 
                             hover:scale-105 
                             transition-transform 
                             duration-300
-                            `} key={key} href={user.github} target="_blank">
+                            `} href={user.github} target="_blank">
                                 <img className={`
-                                gallery-img
                                 `}
                                 src={`https://unavatar.io/github/${user.ghName}`} alt="" />
                                 <div className={`
-                                rounded-full
                                 absolute
                                 inset-0
                                 w-full 
                                 h-full 
                                 flex 
-                                justgitify-center 
+                                justify-center 
                                 items-center 
                                 bg-black/[0.9] 
                                 opacity-0 
                                 hover:opacity-90  
                                 `}>
                                     <h2 className={`
-                                    text-light 
+                                    text-light
                                     font-primary 
                                     font-bold
                                     `}
