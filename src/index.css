@@ -180,66 +180,6 @@ img{
 }
 
 
-
-/* .imagenes{
-  width: 50%;
-}
-.gallery {
-  --s: 130px; 
-  --g: 10px; 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery-img {
-  max-height: 10rem;
-  height: 8rem;
-  object-fit: cover;
-  border-radius: 100%;
-  cursor: pointer;
-  transition: .2s linear;
-}
-.a-img{
-  display:block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-}
-.a-img:hover h2, .a-img:focus h2{
-  opacity:1;
-  transition: 0.8s;
-}
-.a-img h2{
-  width: 100%;
-  padding: 7%;
-  box-sizing:border-box;
-  font-weight: 300;
-  opacity: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-.a-img h2:before, .a-img h2:after{
-  display: inline-block;
-  margin: 0 0.5em;
-  width: 0.25em;
-  height: 0.03em;
-  background: #ffffff;
-  transition: all 0.3s;
-  text-align:center;
-}
-
-.gallery-img:hover {
-  z-index: 1;
-  --_t: 1.2;
-}
- */
-
-
-
-
 @keyframes moveBackground {
   0% {
     background-position: 0% 0%;
