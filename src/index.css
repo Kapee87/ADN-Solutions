@@ -219,8 +219,8 @@ body {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.switch.active {
-  background: linear-gradient(90deg, rgb(25, 185, 213), #b2e1f7);
+.active {
+  background: linear-gradient(0deg, rgb(25, 185, 213), #b2e1f7);
 }
 
 .switch.active::after {
