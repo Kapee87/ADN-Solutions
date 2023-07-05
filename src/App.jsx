@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className='snap-y snap-mandatory overflow-y-scroll w-screen h-screen'>
+      <main className='overflow-y-scroll w-screen h-screen'>
         <Banner />
         <Solutions />
         <Experience />
