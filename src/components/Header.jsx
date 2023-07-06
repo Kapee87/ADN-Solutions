@@ -8,7 +8,7 @@ function Header({ isDark, setIsDark }) {
     const darkMode = isDark ? "bg-dark" : "bg-light"
     const textDarkMode = isDark ? "text-light" : "text-dark"
     const burgerLine = `h-2 w-7 my-1 rounded-full ${isDark ? 'bg-light' : 'bg-dark'} transition ease transform duration-300`;
-    const navLinkStyleDesktop = `${textDarkMode} gradient-text-hover font-bold hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] hover:border`
+    const navLinkStyleDesktop = `${textDarkMode} subray gradient-text-hover font-bold hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]`
     const handleSwitch = () => {
         setIsDark(!isDark)
     }

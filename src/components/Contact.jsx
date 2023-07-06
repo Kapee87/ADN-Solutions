@@ -22,7 +22,7 @@ function Contact() {
         }, 30000)
     };
     return (
-        <section id="contactanos" className="flex justify-center items-center min-h-screen pt-32 pb-4 snap-start">
+        <section id="contactanos" className="flex justify-center items-center min-h-screen pt-20 pb-4 snap-start">
             <form className="
             bg-dark text-light 
             w-3/4
